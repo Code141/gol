@@ -1,0 +1,361 @@
+section#welcome{
+	position:absolute;
+	z-index: 1000;
+	width: 100%;
+	height:100%;
+
+} 
+
+section#walktrought{
+	position:absolute;
+	z-index: 1000;
+	width: 100%;
+	height:100%;
+} 
+div#walktroughtfont{
+	position:absolute;
+	z-index: 900;
+	width: 100%;
+	height:100%;
+
+}
+section#welcome div#gradiant{
+	position:absolute;
+	z-index: 1000;
+	width: 100%;
+	height:100%;
+
+}
+
+section#walktrought div#walktroughtgradiant{
+	position:absolute;
+	z-index: 1000;
+	width: 100%;
+	height:100%;
+}
+div#walktroughtgradiantradial{
+	position:absolute;
+	z-index: 999;
+	width: 100%;
+	height:100%;
+
+	background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+	background-image: -moz-radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+	background-image: -ms-radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+	background-image: -o-radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+
+section#welcome div#welcometitle, section#walktrought div#walktroughttitle  {
+	position:fixed;
+	
+	top:50%;
+	left:50%;
+
+	height:100px;
+	width:512px;
+
+	margin-top: -200px;
+	margin-left: -256px;
+	background-image:url(../img/titleHD.png);
+	float:left;
+	z-index:2000;
+}
+
+
+
+
+
+
+section#welcome div.welcomeError{
+	position:fixed;
+	top:50%;
+	left:50%;
+	height:190px;
+	width:400px;
+	margin-left: -222px;
+	margin-top: -75px;
+	padding:20px;
+	background-color: rgb(38, 38, 38);
+	vertical-align: middle;
+	opacity:1;
+}
+
+section#welcome #loading{
+	height:50px;
+	width:200px;
+	margin-left: -120px;
+}
+
+
+section#welcome #nojs p#msg{
+	text-align: center;
+
+}
+
+section#welcome #nocanvas p#msg{
+	margin-top: -20px;
+	text-align: center;
+}
+
+section#welcome #nocanvas a{
+	margin-top: 10px;
+	float: left;
+	margin-left: 40px;
+}
+
+div#browserChrome{
+	height: 80px;
+	width: 80px;
+	background-image:url(../img/browser.png);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+div#browserChrome:hover{
+	background-position:0px -79px;
+}
+
+div#browserFirefox{
+	height: 80px;
+	width: 80px;
+	background-image:url(../img/browser.png);
+	background-repeat:no-repeat;
+	background-position:-79px 0px;
+}
+div#browserFirefox:hover{
+	background-position:-79px -80px;
+}
+
+div#browserOpera{
+	height: 80px;
+	width: 80px;
+	background-image:url(../img/browser.png);
+	background-repeat:no-repeat;
+	background-position:-316px 0px;
+}
+
+div#browserOpera:hover{
+	background-position:-315px -79px;
+}
+
+section#welcome #nocookie{
+height:200px;
+display: none;
+overflow: visible;
+}
+
+#welcomefullscreen{
+	top:50%;
+	left:50%;
+	width:60px;
+	margin-top: 130px;
+	margin-left: -240px;
+	position:absolute;
+	opacity:0.5;
+}
+#welcomefullscreen:hover{
+	opacity:1;
+}
+#welcomefullscreen input[type=checkbox].css-checkbox + label.css-label{
+	height:18px;
+}
+
+#forgetit{
+	width:150px;
+	font-size: 1.5em;
+	font-weight: 600;
+	text-align: center;
+	line-height: 47px;
+	margin-left: 30px;
+	margin-top: 0px;
+}
+
+#okayletsgo{
+	width:150px;
+	font-size: 1.5em;
+	font-weight: 600;
+	text-align: center;
+	line-height: 47px;
+	margin-left: 30px;
+	margin-top: 0px;
+}
+
+section#welcome div#nojs p#msg{
+margin-top: 50px;
+}
+
+section#welcome div#nocanvas p#msg{
+margin-top: 20px;
+}
+section#welcome p#title, section#walktrought p#title{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-top: 10px;
+	margin-bottom: -5px;
+
+}
+
+section#welcome p#msg, section#walktrought p#msg{
+	text-align: justify;
+	color: rgba(255,255,255,0.5);
+}
+
+
+
+
+section#walktrought{
+	display: none;
+} 
+
+
+section#walktrought div.walktroughtError{
+	position:fixed;
+	top:50%;
+	left:50%;
+	width:600px;
+	margin-left: -322px;
+	margin-top: -75px;
+	padding:20px;
+	background-color: rgb(38, 38, 38);
+	vertical-align: middle;
+	opacity:1;
+	display:none;
+		z-index: 1000;
+
+}
+
+div#slide1{
+	height:285px;
+}
+div#slide2{
+	height:250px;
+}
+div#slide3{
+	height:230px;
+}
+div#slide4{
+	height:175px;
+}
+div#slide5{
+	height:175px;
+}
+div#slide6{
+	height:175px;
+}
+div#slide7{
+	height:175px;
+}
+div#slide8{
+	height:150px;
+}
+div#slide8 p#msg{
+text-align: center;
+width:400px;
+}
+div#slide9{
+	height:150px;
+}
+
+div#nameoftools{
+position:absolute;
+top: 0px;
+left: 0px;
+height: 100%;
+width:100%;
+display:none;
+}
+
+div#nameoftools p{
+position:absolute;
+font-weight: 600;
+font-size: 2em;
+color:rgba(255, 255, 255, 0.5);
+}
+
+p#op{
+top:25px;
+left:90px;
+margin:0px 0px 0px 0px;
+}
+p#ge{
+top:100px;
+left:50%;
+width:400px;
+margin:0px 0px 0px -200px;
+text-align: center;
+
+}
+p#mo{
+top:80px;
+right: 55px;
+margin:0px 0px 0px 0px;
+}
+p#ca{
+left:90px;
+top:50%;
+margin:-20px 0px 0px 0px;
+}
+p#fa{
+right:90px;
+top:50%;
+margin:-40px 0px 0px 0px;
+text-align: right;
+}
+p#pa{
+bottom:25px;
+left:90px;
+margin:0px 0px 0px 0px;
+}
+p#to{
+bottom:80px;
+left:50%;
+width:400px;
+margin:0px 0px 0px -200px;
+text-align: center;
+
+}
+p#fi{
+bottom:25px;
+right:90px;
+margin:0px 0px 0px 0px;
+text-align: right;
+
+}
+
+section#walktrought div#slidebutton{
+	width:150px;
+	font-size: 1.5em;
+	font-weight: 600;
+	text-align: center;
+	line-height: 47px;
+	position:absolute;
+	left:50%;
+	margin-left: -75px;
+	bottom: 20px;
+}
+
+
+
+
+div#report{
+	width: 600px;
+	margin-left: -300px;
+	z-index: 2000;
+}
+
+input#reportInput{
+width: 550px;
+margin: 25px;
+margin-bottom: 5px;
+color:white;
+height: 200px;
+font-size: 1.2em;
+	vertical-align: initial;
+}
+
+div#report div#cancelimport{
+top:50%;
+left:50%;
+margin-left:-280px;
+margin-top: 110px;
+}

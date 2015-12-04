@@ -1,0 +1,222 @@
+#masque{
+		display:none;
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+position:fixed;
+	z-index: 300;
+}
+
+.alert{
+	display: none;
+
+	position:absolute;
+	background-color:#EEF;
+	width:400px;
+	height:400px;
+	top:50%;
+	left:50%;
+	margin-top: -220px;
+	margin-left:-200px;
+
+	background-image:url(../img/button_bg.png);
+	background-color: rgba(25, 25, 25, 1);
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px 0px rgba( 0, 0, 0, 0.4), 0 0 10px 5px rgba( 0, 0, 0, 1) inset;
+
+	border:1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.okaysave{
+	background-image:url(../img/glyphicons/glyphicons_198_ok_white.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	margin-bottom: 13px;
+	float:right;
+	margin-right: 17px;
+}
+
+.cancelsave{
+	background-image:url(../img/glyphicons/glyphicons_197_remove_white.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	margin-bottom: 13px;
+}
+
+.alert h1{
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.alert p{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/*-----------PATTERN SAVE-----------*/
+
+#patternviewer{
+	width: 230px;
+	height: 230px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height:230px;
+	text-align:center;
+}
+
+#patternviewer img{
+	border:1px solid rgba(255, 255, 255, 0.5);
+	vertical-align:middle;
+}
+
+#patternsavername{
+	width:195px;
+	height: 44px;
+	font-size: 1em;
+	font-weight: 600;
+	color:white;
+	padding-left: 10px;
+	padding-right: 10px;
+	opacity: 1;
+	margin-bottom: 13px;
+}
+
+/*-------------MAP SAVE-------------*/
+#newfile{
+	height:240px;
+	margin-top: -120px;
+
+}
+
+#sharemap{
+height:250px;
+margin-top: -125px;
+}
+
+#sharemap #urlmap{
+color:white;
+}
+
+#sharemap #okaynewmap{
+	margin-right: 175px;
+	margin-top:0px;
+}
+#exportmap{
+	display:none;
+	height:520px;
+	margin-top: -280px;
+	width:500px;
+	margin-left: -250px;
+	z-index: 300;
+}
+
+#exportmapauthorname, #exportmapmapname{
+	width:195px;
+	height: 44px;
+	font-size: 1em;
+	font-weight: 600;
+	color:white;
+	padding-left: 10px;
+	padding-right: 10px;
+	opacity: 1;
+
+}
+
+#exportmapviewer{
+	width: 230px;
+	height: 230px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height:230px;
+	text-align:center;
+}
+
+#exportmapviewer img{
+	border:1px solid rgba(255, 255, 255, 0.5);
+	vertical-align:middle;
+}
+
+#importmap{
+	display:none;
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+position:fixed;
+	z-index: 300;
+}
+
+#maplist{
+	overflow: hidden;
+	top:5%;
+	left: 5%;
+	right: 5%;
+		width: 90%;
+	height: 90%;
+	position:absolute;
+	background-color:#EEF;
+	background-image:url(../img/button_bg.png);
+	background-color: rgba(25, 25, 25, 1);
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px 0px rgba( 0, 0, 0, 0.4), 0 0 10px 5px rgba( 0, 0, 0, 1) inset;
+
+	border:1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#maplist h1{
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#maplist p{
+	text-align: center;
+	margin-bottom: 10px;
+}
+#allmap{
+overflow-y:scroll;
+overflow-x:hidden;
+height:100%;
+margin-bottom: 200px;
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: center;
+	align-content: flex-start;
+}
+
+.bddmap{
+	margin: 20px;
+	margin: 20px 20px 0px 20px;
+}
+
+.bddmapimg{
+	width: 200px;
+	height: 200px;
+	line-height:200px;
+
+	margin: 0px;
+	margin-bottom: 5px;
+	text-align: center;
+
+}
+
+.bddmapimg img{
+	vertical-align:middle;
+}
+
+.mapnamelist{
+	color: white;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+#cancelimport{
+	position:fixed;
+	top:5%;
+	margin-right: 20px;
+	right:5%;
+}
+

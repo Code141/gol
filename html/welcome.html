@@ -1,0 +1,222 @@
+<section id="welcome">
+	<div id="gradiant">
+		<div id="welcometitle"></div>
+
+		<div class="button welcomeError" id="loading">
+			<p id="title">LOADING</p>
+		</div>
+
+		<div class="button welcomeError" id="nocookie" >
+			<p id="title">WELCOME !</p>
+			<p id="msg">
+				It seem to be your first visite, If you don't have ever heard about the game of life,
+				a litle walktrought will make you maybe save some time...
+
+			</p>
+
+			<div class="button" id="forgetit" onclick="welcomePass()">
+				FORGET IT
+			</div>
+			<div class="button" id="okayletsgo" onclick="walktrought1();">
+				LET'S GO
+			</div>
+
+		</div>
+
+		<div class="button welcomeError" id="nocanvas">
+			<canvas id="canvasTest">
+				<p id="title">
+					YOUR BROWSER DON&apos;T SUPPORT CANVAS<br>
+				</p>
+				<p id="msg">
+					COME BACK QUICKLY WITH A BETTER NAVIGATOR
+				</p>
+
+				<a href="http://www.google.com/chrome" target="_blank">
+					<div id="browserChrome">
+					</div>
+				</a>
+
+				<a href="http://www.mozilla.org/firefox/new/" target="_blank">
+					<div id="browserFirefox">
+					</div>
+				</a>
+
+				<a href="http://www.opera.com/download" target="_blank">
+					<div id="browserOpera">
+					</div>
+				</a>
+			</canvas>
+		</div>
+
+
+		<div class="button welcomeError" id="nojs">
+			<p id="title">
+				IT SEEM TO BE A PROBLEME WITH<br> YOUR JAVASCRIPT
+			</p>
+			<p id="msg">
+				YOU MUST ACTIVATE IT FOR USE THIS WEB APPLY !
+			</p>
+		</div>
+	</div>
+</section>
+
+
+
+<div id="walktroughtgradiantradial">
+</div>
+<div id="walktroughtfont"></div>
+
+<section id="walktrought">
+
+	<div id="walktroughtgradiant">
+	</div>
+
+	<div id="walktroughttitle"></div>
+	<div class="walktroughtError button" id="slide1">
+		<p id="title">
+			HISTORY
+		</p>
+
+		<p id="msg">
+			The Game of Life is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
+		</p>
+		<p id="msg">
+			It's a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input.
+		</p>
+		<p id="msg">
+			One interacts with the Game of Life by creating an initial configuration and observing how it evolves or, for advanced players, by creating patterns with particular properties.
+		</p>
+		<div class="button" id="slidebutton" onclick="walktrought2();">CONCEPT</div>
+	</div>
+
+	<div class="walktroughtError button" id="slide2">
+		<p id="title">
+			CONCEPT
+		</p>
+		<p id="msg">
+			The universe of the Game of Life is an infinite two-dimensional grid of cells, each of which is in one of two possible states, alive or dead. 
+		</p>
+		<p id="msg">
+			Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or diagonally adjacent. At each generations (step in time), some following rules are applied...
+		</p>
+		<div class="button" id="slidebutton" onclick="walktrought3();">RULES</div>
+
+	</div>
+
+
+	<div class="walktroughtError button" id="slide3">
+		<p id="title">
+			RULES
+		</p>
+		<p id="msg">
+			-Any live cell with fewer than two live neighbours dies, as if caused by under-population.<br>
+			-Any live cell with two or three live neighbours lives on to the next generation.<br>
+			-Any live cell with more than three live neighbours dies, as if by overcrowding.<br>
+			-Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.<br>
+			(This rule is called "B3/S23" for 3 -> Born, 2 or 3 -> Survive, some variante existe...)
+
+		</p>
+		<div class="button" id="slidebutton" onclick="walktrought4();">EXAMPLE</div>
+	</div>
+
+
+	<div class="walktroughtError button" id="slide4">
+		<p id="title">
+			STATICS PATTERN
+		</p>
+		<p id="msg">
+			A still life is a pattern that does not change from one generation to the next.<br>
+			You can see here four notables statics patterns, but they are rapidly altered by a glider...<br>
+			Finally three statics patterns take place in new stable configuration.
+		</p>
+		<div class="button" id="slidebutton" onclick="walktrought5();">OSCILLATORS</div>
+	</div>
+
+	<div class="walktroughtError button" id="slide5">
+		<p id="title">
+			OSCILLATORS PATTERN
+		</p>
+		<p id="msg">
+			An oscillator is a pattern that repeats itself, after a fixed number<br>
+			of generations (this number is called "period").<br>
+			Here the Blinker (period : 2), and the beautifull Pulsar (period : 3).
+		</p>
+		<div class="button" id="slidebutton" onclick="walktrought6();">SPACESHIPS</div>
+	</div>
+
+	<div class="walktroughtError button" id="slide6">
+		<p id="title">
+			SPACESHIPS PATTERN
+		</p>
+		<p id="msg">
+			An spaceship is a special oscillator, who, after a fixed number of generations,<br>
+			repeats itself, but not at the same emplacement.<br>
+			Like this Lightweight moving horizontally, or this Glider falling in diagonal.
+		</p>
+		<div class="button" id="slidebutton" onclick="walktrought7();">OTHERS</div>
+	</div>
+
+	<div class="walktroughtError button" id="slide7">
+		<p id="title">
+			A WORLD OF UNDISCOVERED PATTERN
+		</p>
+		<p id="msg">
+			There is much more interesting patterns and lot classifications for each them particularity.<br>
+			And lot of them are not discovered yet...
+		</p>
+		<div class="button" id="slidebutton" onclick="walktrought8();">HUD</div>
+	</div>
+
+	<div class="walktroughtError button" id="slide8">
+		<p id="title">
+			HUD
+		</p>
+		<p id="msg">
+			This is how is ordered the HUD
+		</p>
+		<div class="button" id="slidebutton" onclick="walktrought9();">TOOLS</div>
+	</div>
+	<div id="nameoftools">
+		<p id="op">	
+			OPTIONS
+		</p>
+
+		<p id="ge">	
+			GENERATIONS
+		</p>
+
+		<p id="mo">	
+			STAT MONITORS
+		</p>
+
+		<p id="ca">	
+			CAMERA
+		</p>
+
+		<p id="fa">	
+			FAST SAVE/LOAD <br>& PREVIOUS GEN
+		</p>
+
+		<p id="pa">	
+			PATTERN LIBRARY
+		</p>
+		<p id="to">	
+			TOOLS
+		</p>
+		<p id="fi">	
+			SAVE/LOAD & SHARE MAP
+		</p>
+	</div>
+
+	<div class="walktroughtError button" id="slide9">
+		<p id="title">
+			TOOLS
+		</p>
+		<p id="msg">
+			Here are the principal tools that you gonna need.
+		</p>
+		<div class="button" id="slidebutton" onclick="walktroughtExit();">I'M READY !</div>
+	</div>
+
+</section>

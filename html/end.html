@@ -1,0 +1,105 @@
+<div id="masque">
+	<div class="alert" id="patternSaver">
+		<div id="center">
+			<h1>SAVE NEW PATTERN</h1>
+			<div id="patternviewer"></div>
+			<div id="savemenu">
+				<div class="button cancelsave" id="cancelsavepattern"></div>
+				<input type="text" class="button" name="patternName" id="patternsavername" value="PATTERN NAME" onclick="if(this.value=='PATTERN NAME'){this.value='';}">
+				<div class="button okaysave" id="okaysavepattern"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="alert" id="newfile">
+		<div id="center">
+			<h1 id="alerttitle">NEW EMPTY MAP</h1>
+			<p>
+				It will destroy the current map.<br>		
+				But you can save it now by selecting a slot,<br>
+				or continue without saving...<br>
+			</p>
+			<div id="savemenu">
+				<div class="button cancelsave" id="cancelnewmap"></div>
+				<div class="button okaysave" id="okaynewmap"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="alert" id="deletsave">
+		<div id="center">
+			<h1 id="alerttitle">DELETE MAP</h1>
+			<p>
+				Do you really want to delete this map ?<br>		
+				(slotN°) Mapname 
+			</p>
+			<div id="savemenu">
+				<div class="button cancelsave" id="cancelnewmap"></div>
+				<div class="button okaysave" id="okaynewmap"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="alert" id="exportmap">
+		<div id="center">
+			<h1 id="alerttitle">EXPORT CURRENT MAP</h1>
+			<p>
+				Save this current map into the public collection, <br>for share, or retrieve it later.
+			</p>
+			<div id="exportmapviewer"></div>
+
+			<input type="text" class="button" id="exportmapauthorname" value="AUTHOR NAME" onclick="if(this.value=='AUTHOR NAME'){this.value='';}">
+
+			<input type="text" class="button" id="exportmapmapname" value="MAP NAME" onclick="if(this.value=='MAP NAME'){this.value='';}">
+			<div class="button cancelsave" id="cancelnewmap" onclick="this.parentElement.parentElement.style.display='none';document.getElementById('masque').style.display = '';"></div>
+			<div class="button okaysave" id="okaynewmap" onclick="gol.hud.exportMap();"></div>
+
+		</div>
+	</div>
+	
+	<div class="alert" id="sharemap">
+		<div id="center">
+			<h1 id="alerttitle">SHARE MAP</h1>
+			<p>
+				Your map has been successfully saved,<br>
+				You can now share with this url :
+			</p>
+		</div>
+		<p id="urlmap"><p>
+
+			<div class="button okaysave" id="okaynewmap" onclick="this.parentElement.parentElement.style.display=''"></div>
+		</div>
+	</div>
+
+	<div id="importmap">
+		<div id="maplist">
+			<h1 id="alerttitle">
+				IMPORT MAP
+			</h1>
+			<div class="button cancelsave" id="cancelimport" onclick="this.parentElement.parentElement.style.display='none'"></div>
+			<div id="allmap">
+			</div>
+		</div>
+	</div>
+
+	<div class="alert" id="report">
+		<div id="center">
+			<h1 id="alerttitle">BUG REPORT / SUGGESTIONS</h1>
+			<input type="text" class="button" id="reportInput" value="Type here your bug report, or any suggestion for improvement." onclick="if(this.value=='Type here your bug report, or any suggestion for improvement.'){this.value='';}">
+
+
+			<div class="button cancelsave" id="cancelimport" onclick="this.parentElement.parentElement.style.display='none';getElementById('masque').style.display='none';"></div>
+			<div class="button okaysave" id="okaynewmap" onclick="gol.hud.sendReport();"></div>
+
+		</div>
+	</div>
+
+</div>
+
+<section id="displaymsg">
+</section>
+
+<section id="ajaxSocket">
+</section>
+</body>
+</html>

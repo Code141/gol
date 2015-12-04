@@ -1,0 +1,500 @@
+<section id="hud">
+
+	<section class="hudElement" id="zoom">
+		<div class="button" id="zoomin"><p>ZOOM IN <span class="shortkeylive">(SCROLL IN)</span></p></div><br>
+		<div class="button" id="movehand"><p>MOVE <span class="shortkeylive">(SPACE + MOUSE DRAG)</span></p></div><br>
+		<div class="button" id="zoomout"><p>ZOOM OUT <span class="shortkeylive">(SCROLL OUT)</span></p></div>
+	</section>
+
+	<section class="hudElement" id="fastsavehistory">
+		<div class="button" id="lastsave"><p><span class="shortkeylive">(L)</span> QUICK LOAD</p></div><br>
+		<div class="button" id="history"><p><span class="shortkeylive">(H)</span> PREVIOUS GENERATION</p></div><br>
+		<div class="button" id="fastsave"><p><span class="shortkeylive">(M)</span> QUICK SAVE</p></div>
+	</section>
+
+	<section class="hudElement" id="control">
+		<div class="button" id="pause">
+		</div>
+		<p id="legendpause">
+			PAUSE<br><span class="shortkeylive">(S)</span>
+		</p>
+		<div class="button" id="play">
+		</div>
+		<p id="legendplay">
+			PLAY<br><span class="shortkeylive">(S)</span>
+		</p>
+		<div class="button" id="onestep">
+		</div>
+		<p id="legendonestep">
+			ONE STEP<br><span class="shortkeylive">(SHIFT + S)</span>
+		</p>
+		<input type="range" id="speed" min="0" max="2000" value="2000">
+		<p id="legendspeed">
+			SPEED :<br>MAX
+		</p>
+		<p id="legendspeedalt">GENERATIONS SPEED<p>
+		</section>
+
+		<section class="hudElement" id="options">
+			<div class="button" id="showoptions">
+				<p class="title" id="optionstitle">OPTIONS</p>
+				<div class="optcat" id="generaltitle">
+					<p>
+						GENERAL
+					</p>
+					<hr>
+					<div class="cat">
+						<input id="fulscreenbox" class="css-checkbox" type="checkbox" checked="checked"/>
+						<label for="fulscreenbox" class="css-label" id="fullscreen">Fullscreen</label>
+						<br>
+						<input id="displaycellbox" class="css-checkbox" type="checkbox" />
+						<label for="displaycellbox" class="css-label" id="showcell">Show Hovered Cell</label>
+					</div>
+				</div>
+				<div class="optcat">
+					<p>
+						MAP
+					</p>
+					<hr>
+					<div class="cat">
+						<input id="showtrailbox" class="css-checkbox" type="checkbox" />
+						<label for="showtrailbox" class="css-label" id="drawtrail">Show Ghost Trails</label>
+						<br>
+						<input id="showrulersbox" class="css-checkbox" type="checkbox" />
+						<label for="showrulersbox" class="css-label" id="showrulers">Show rulers</label>
+						<br>
+						<input id="showgridbox" class="css-checkbox" type="checkbox" />
+						<label for="showgridbox" class="css-label" id="showgrid">Show grid</label>
+
+					</div>
+				</div>
+				<div class="optcat">
+					<p>
+						MONITOR
+					</p>
+					<hr>
+					<div class="cat">
+						<table>
+							<tr>
+								<td>
+								</td>
+								<td class="legend">
+									DISPLAY
+								</td>
+								<td class="legend"> 
+									BIG
+								</td>
+								<td class="legend">
+									GRAPH
+								</td>
+
+							</tr>
+							<tr>
+								<td class="monitorname">
+									FPS
+								</td>
+
+								<td>
+									<input id="displayfpsgraphbox" class="css-checkbox" type="checkbox" />
+									<label for="displayfpsgraphbox" class="css-label" id="displayfps"></label>
+								</td>
+								<td>
+									<input id="fpsgraphbigbox" class="css-checkbox" type="checkbox" checked="checked"/>
+									<label for="fpsgraphbigbox" class="css-label" id="bigfps"></label>
+								</td>
+								<td>
+									<input id="fpsgraphbox" class="css-checkbox" type="checkbox" />
+									<label for="fpsgraphbox" class="css-label" id="graphfps"></label>
+								</td>
+
+							</tr>
+
+							<tr>
+								<td class="monitorname">
+									GEN/s
+								</td>
+								<td>
+									<input id="displayshowgensbowgraph" class="css-checkbox" type="checkbox" />
+									<label for="displayshowgensbowgraph" class="css-label" id="displaygens"></label>
+								</td>
+								<td>
+									<input id="showgensgraphbigbox" class="css-checkbox" type="checkbox" checked="checked"/>
+									<label for="showgensgraphbigbox" class="css-label" id="biggens"></label>
+								</td>
+								<td>
+									<input id="showgensbowgraph" class="css-checkbox" type="checkbox" />
+									<label for="showgensbowgraph" class="css-label" id="graphgens"></label>
+								</td>
+
+							</tr>
+							<tr>
+								<td class="monitorname">
+									CELL
+								</td>
+								<td>
+									<input id="displayshowlivecellgraphbox" class="css-checkbox" type="checkbox" />
+									<label for="displayshowlivecellgraphbox" class="css-label" id="displaycell"></label>
+								</td>
+								<td>
+									<input id="showlivecellgraphbigbox" class="css-checkbox" type="checkbox" checked="checked"/>
+									<label for="showlivecellgraphbigbox" class="css-label" id="bigcell" ></label>
+								</td>
+								<td>
+									<input id="showlivecellgraphbox" class="css-checkbox" type="checkbox" />
+									<label for="showlivecellgraphbox" class="css-label" id="graphcell"></label>
+								</td>
+
+
+							</tr>
+							<tr>
+								<td class="monitorname">
+									GEN
+								</td>
+								<td>
+									<input id="displayshowgenbowgraph" class="css-checkbox" type="checkbox" />
+									<label for="displayshowgenbowgraph" class="css-label" id="displaygen"></label>
+								</td>
+								<td>
+									<input id="showgengraphbigbox" class="css-checkbox" type="checkbox" checked="checked"/>
+									<label for="showgengraphbigbox" class="css-label" id="biggen"></label>
+								</td>
+								<td>
+
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="optcat">
+					<p>
+						SHORTKEY
+					</p>
+					<hr>
+					<div class="cat">
+
+						<center>DIVERS</center>
+						<hr>
+						R = Reset map
+						<center>PATTERN TOOL</center>
+						<hr>
+						N = Apply one generation on pattern
+						<center>SELECTOR TOOL</center>
+						<hr>
+						C = Copy 
+						P = Save selection as a new pattern
+					</div>
+				</div>
+				<div class="optcat">
+					<p>
+						NEXT FEATURES
+					</p>
+					<hr>
+					<div class="cat">
+					<center>GAME OF LIFE - V <span id="version">1</span>.0</center>
+<hr>
+<p id="nextfeatures">
+NEXT FEATURES :<br>
+					-Hashlife algorithme integration<br>
+					-Canvas rendering optimisations<br>
+					-Importation file (ex: from golly, from a JPG, etc...)<br>
+					-More editing, measuring, visualisings tools<br>
+					-Smarter community map library<br>
+					-Much more pattern<br>
+
+</p><hr>
+<div class="button" id="bugbutton">BUGS/SUGGESTIONS</div>
+
+
+					</div>
+				</div>
+				<div id="credit">
+					<p>
+
+						
+						By <a href="http://code141.fr">CODE141.FR</a> - 2015<br>
+						All icons by <a target="_blank" href="http://glyphicons.com">GLYPHICONS.com</a>
+					</p>
+					<hr>
+					<div id="fbshare">
+						<div class="fb-like" data-href="http://code141.fr/projects/gameoflife/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
+
+					</div>
+				</div>
+			</section>
+
+			<section class="hudElement" id="monitor">
+				<div id="optfps">
+					<table>
+						<tr>
+							<td>
+								<div class="button" id="gen">
+									<canvas id="gencanvas"></canvas>
+								</div>	
+							</td>
+							<td>
+								<div class="button" id="livecell">
+									<canvas id="livecellcanvas"></canvas>
+								</div>	
+							</td>
+							<td>
+								<div class="button" id="gps">
+									<canvas id="gpscanvas"></canvas>
+								</div>
+							</td>
+							<td>
+								<div class="button" id="fps">
+									<canvas id="fpscanvas"></canvas>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="monitorname">
+								<div id="genname">
+									GEN
+								</div>
+							</td>
+							<td class="monitorname">
+								<div id="livecellname">
+									CELL
+								</div>
+							</td>
+							<td class="monitorname">
+								<div id="gpsname">
+									GEN/s
+								</div>
+							</td>
+							<td class="monitorname">
+								<div id="fpsname">
+									FPS
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+
+			<section class="hudElement" id="pattern">
+				<div class="button" id="showpattern">
+					<div id="quickfixpattern"></div>
+					<div class="patternmaincat">
+						<div class="maincat" id="general">
+							GENERAL
+							<div id="generalliste">
+							</div>
+						</div>
+						<hr class="vert">
+						<div class="maincat" id="perso">PERSO
+							<div id="persoliste">
+								<p id="nosaveyet">
+									YOU DON'T HAVE YET SAVE ANY PATTERN<br>
+									<span>please use selector tool for it</span>
+								</p>
+							</div>
+
+						</div>
+					</div>
+					<p class="title" id="patterntitle">PATTERN</p>
+				</div>
+			</section>
+
+			<section id="toolboxoptions">
+				<div id="patternoptions">
+					<div class="button" id="nextgenpattern"></div>
+					<div class="button" id="turnpatternclockwise"></div>
+					<div class="button" id="turnpatternanticlockwise"></div>
+					<div class="button" id="mirroringpatternx"></div>
+					<div class="button" id="mirroringpatterny"></div>
+				</div>
+				<div id="selectoroptions"><!--Select grid for copy/colle-->
+					<div class="button" id="saveselection"></div>
+					<div class="button" id="cut"></div>
+					<div class="button" id="erasezone"></div>
+				</div>
+			</section>
+
+			<section class="hudElement" id="toolbox">
+				<div class="button" id="selectortool"></div>
+				<p id="legendselector">
+					<span class="shortkeylive">(A)</span> SELECTOR
+				</p>
+				<div class="button" id="pentool"></div>
+				<p id="legendpen">
+					PEN <span class="shortkeylive">(Z)</span>
+				</p>
+			</section>
+
+			<section class="hudElement" id="file">
+				<div class="button" id="showfile">
+					<div id="quickfixfile"></div>
+					<div class="filemaincat">
+						<div class="maincatfile" id="new">
+							NEW
+						</div>
+						<hr class="vert">
+						<div class="maincatfile" id="save">
+							SAVE
+							<div class="catfile" id="savefile">
+								<p id="export">
+									SHARE
+								</p>
+								<hr>
+								<div class="slotmap save" id="0">
+									<div class="slotlabel">SLOT 0</div>
+									<input type="text" value="Type map name here" onclick="this.value='';" onmouseout="if(this.value == ''){this.value = 'Type map name here'}"></input>
+									<div class="cancelmapsave" onclick="gol.hud.deleteMap(this);"></div>
+									<div class="okaymapsave" onclick="gol.mapLib.save(this);"></div>
+									<div class="saveState">[EMPTY]</div>
+									<div class="mapimg" id="mapimgsave0"></div>
+								</div>
+								<hr>
+								<div class="slotmap save" id="1">
+									<div class="slotlabel">SLOT 1</div>
+									<input type="text" value="Type map name here" onclick="this.value='';" onmouseout="if(this.value == ''){this.value = 'Type map name here'}"></input>
+									<div class="cancelmapsave" onclick="gol.hud.deleteMap(this);"></div>
+									<div class="okaymapsave" onclick="gol.mapLib.save(this);"></div>
+									<div class="saveState">[EMPTY]</div>
+									<div class="mapimg" id="mapimgsave1"></div>
+								</div>
+								<hr>
+								<div class="slotmap save" id="2">
+									<div class="slotlabel">SLOT 2</div>
+									<input type="text" value="Type map name here" onclick="this.value='';" onmouseout="if(this.value == ''){this.value = 'Type map name here'}"></input>
+									<div class="cancelmapsave" onclick="gol.hud.deleteMap(this);"></div>
+									<div class="okaymapsave" onclick="gol.mapLib.save(this);"></div>
+									<div class="saveState">[EMPTY]</div>
+									<div class="mapimg" id="mapimgsave2"></div>
+								</div>
+								<hr>
+								<div class="slotmap save" id="3">
+									<div class="slotlabel">SLOT 3</div>
+									<input type="text" value="Type map name here" onclick="this.value='';" onmouseout="if(this.value == ''){this.value = 'Type map name here'}"></input>
+									<div class="cancelmapsave" onclick="gol.hud.deleteMap(this);"></div>
+									<div class="okaymapsave" onclick="gol.mapLib.save(this);"></div>
+									<div class="saveState">[EMPTY]</div>
+									<div class="mapimg" id="mapimgsave3"></div>
+								</div>
+								<hr>
+								<div class="slotmap save" id="4">
+									<div class="slotlabel">SLOT 4</div>
+									<input type="text" value="Type map name here" onclick="this.value='';" onmouseout="if(this.value == ''){this.value = 'Type map name here'}"></input>
+									<div class="cancelmapsave" onclick="gol.hud.deleteMap(this);"></div>
+									<div class="okaymapsave" onclick="gol.mapLib.save(this);"></div>
+									<div class="saveState">[EMPTY]</div>
+									<div class="mapimg" id="mapimgsave4"></div>
+								</div>
+								<hr>
+								<div class="slotmap save" id="5">
+									<div class="slotlabel">SLOT 5</div>
+									<input type="text" value="Type map name here" onclick="this.value='';" onmouseout="if(this.value == ''){this.value = 'Type map name here'}"></input>
+									<div class="cancelmapsave" onclick="gol.hud.deleteMap(this);"></div>
+									<div class="okaymapsave" onclick="gol.mapLib.save(this);"></div>
+									<div class="saveState">[EMPTY]</div>
+									<div class="mapimg" id="mapimgsave5"></div>
+								</div>
+								<hr>
+								<div class="slotmap save" id="6">
+									<div class="slotlabel">SLOT 6</div>
+									<input type="text" value="Type map name here" onclick="this.value='';" onmouseout="if(this.value == ''){this.value = 'Type map name here'}"></input>
+									<div class="cancelmapsave" onclick="gol.hud.deleteMap(this);"></div>
+									<div class="okaymapsave" onclick="gol.mapLib.save(this);"></div>
+									<div class="saveState">[EMPTY]</div>
+									<div class="mapimg" id="mapimgsave6"></div>
+								</div>
+								<hr>	
+								<div class="slotmap save" id="7">
+									<div class="slotlabel">SLOT 7</div>
+									<input type="text" value="Type map name here" onclick="this.value='';" onmouseout="if(this.value == ''){this.value = 'Type map name here'}"></input>
+									<div class="cancelmapsave" onclick="gol.hud.deleteMap(this);"></div>
+									<div class="okaymapsave" onclick="gol.mapLib.save(this);"></div>
+									<div class="saveState">[EMPTY]</div>
+									<div class="mapimg" id="mapimgsave7"></div>
+								</div>
+								<hr>
+								<div class="slotmap save" id="8">
+									<div class="slotlabel">SLOT 8</div>
+									<input type="text" value="Type map name here" onclick="this.value='';" onmouseout="if(this.value == ''){this.value = 'Type map name here'}"></input>
+									<div class="cancelmapsave" onclick="gol.hud.deleteMap(this);"></div>
+									<div class="okaymapsave" onclick="gol.mapLib.save(this);"></div>
+									<div class="saveState">[EMPTY]</div>
+									<div class="mapimg" id="mapimgsave8"></div>
+								</div>
+								<hr>
+								<div class="slotmap save" id="9">
+									<div class="slotlabel">SLOT 9</div>
+									<input type="text" value="Type map name here" onclick="this.value='';" onmouseout="if(this.value == ''){this.value = 'Type map name here'}"></input>
+									<div class="cancelmapsave" onclick="gol.hud.deleteMap(this);"></div>
+									<div class="okaymapsave" onclick="gol.mapLib.save(this);"></div>
+									<div class="saveState">[EMPTY]</div>
+									<div class="mapimg" id="mapimgsave9"></div>
+								</div>
+							</div>
+						</div>
+						<hr class="vert">
+						<div class="maincatfile" id="load">
+							LOAD
+							<div class="catfile" id="loadfile">
+								<p id="import">
+									IMPORT
+								</p>
+								<hr>
+								<div class="slotmap load" id="0" onclick="gol.hud.newFile(this.id);">
+									<div id="slotname0">SLOT 0</div>
+									<div class="mapimg" id="mapimgload0"></div>
+								</div>
+								<hr>
+								<div class="slotmap load" id="1" onclick="gol.hud.newFile(this.id);">
+									<div id="slotname1">SLOT 1</div>
+									<div class="mapimg" id="mapimgload1"></div>
+								</div>
+								<hr>
+								<div class="slotmap load" id="2" onclick="gol.hud.newFile(this.id);">
+									<div id="slotname2">SLOT 2</div>
+									<div class="mapimg" id="mapimgload2"></div>
+								</div>
+								<hr>
+								<div class="slotmap load" id="3" onclick="gol.hud.newFile(this.id);">
+									<div id="slotname3">SLOT 3</div>
+									<div class="mapimg" id="mapimgload3"></div>
+								</div>
+								<hr>
+								<div class="slotmap load" id="4" onclick="gol.hud.newFile(this.id);">
+									<div id="slotname4">SLOT 4</div>
+									<div class="mapimg" id="mapimgload4"></div>
+								</div>
+								<hr>
+								<div class="slotmap load" id="5" onclick="gol.hud.newFile(this.id);">
+									<div id="slotname5">SLOT 5</div>
+									<div class="mapimg" id="mapimgload5"></div>
+								</div>
+								<hr>
+								<div class="slotmap load" id="6" onclick="gol.hud.newFile(this.id);">
+									<div id="slotname6">SLOT 6</div>
+									<div class="mapimg" id="mapimgload6"></div>
+								</div>
+								<hr>	
+								<div class="slotmap load" id="7" onclick="gol.hud.newFile(this.id);">
+									<div id="slotname7">SLOT 7</div>
+									<div class="mapimg" id="mapimgload7"></div>
+								</div>
+								<hr>
+								<div class="slotmap load" id="8" onclick="gol.hud.newFile(this.id);">
+									<div id="slotname8">SLOT 8</div>
+									<div class="mapimg" id="mapimgload8"></div>
+								</div>
+								<hr>
+								<div class="slotmap load" id="9" onclick="gol.hud.newFile(this.id);">
+									<div id="slotname9">SLOT 9</div>
+									<div class="mapimg" id="mapimgload9"></div>
+								</div>
+
+
+							</div>
+
+						</div>
+					</div>
+					<p class="title" id="filetitle">MAP</p>
+				</div>
+			</section>
+
+		</section>

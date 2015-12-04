@@ -1,0 +1,167 @@
+body{
+	margin:0px;
+	background-color:#000000;
+	color:#FFFFFF;
+	background-image:url(../img/button_bg.png);
+	font-family: 'Rajdhani', sans-serif;
+
+	cursor:default;
+}
+
+
+canvas#canvasGrid {
+	position:fixed;
+	top:0;
+	width:100%;
+	height:100%;
+		background-image: -webkit-linear-gradient(top, rgba(255, 255, 255,0), rgba(255, 255, 255,0.08), rgba(255, 255, 255,0));
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255,0), rgba(255, 255, 255,0.08), rgba(255, 255, 255,0));
+	background-image: -ms-linear-gradient(top, rgba(255, 255, 255,0), rgba(255, 255, 255,0.08), rgba(255, 255, 255,0));
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255,0), rgba(255, 255, 255,0.08), rgba(255, 255, 255,0));
+
+}
+canvas#canvasTrails {
+	position:fixed;
+	top:0;
+	width:100%;
+	height:100%;
+	opacity:0.1;
+}
+canvas#canvasMap {
+	position:fixed;
+	top:0;
+	width:100%;
+	height:100%;
+		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	background-image: -moz-radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	background-image: -ms-radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	background-image: -o-radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+} 
+
+canvas#canvasTools {
+	position:fixed;
+	top:0;
+	width:100%;
+	height:100%;
+} 
+
+/* 
+canvas#myCanvas:hover{
+	 cursor: none; 
+}
+*/
+
+section#ajaxSocket{
+	/*display:none;*/
+background-color: #FF0000;
+z-index: 200;
+position:fixed;
+}
+
+section#hud{
+	visibility:hidden;
+}
+div#fbshare{
+margin-bottom: 10px;
+}
+/*------------------INPUT CHECKBOX------------------*/
+
+input[type=checkbox].css-checkbox {
+	display:none;
+}
+
+
+input[type=checkbox].css-checkbox + label.css-label {
+	padding-left:30px;
+	margin-left:8px;
+	height:18px;
+	display:inline-block;
+	line-height:15px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:15px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-position: 0 -18px;
+}
+
+.css-label{
+	background-image:url(../img/checkboxsprite.png);
+}
+
+/*--------------------INPUT RANGE--------------------*/
+input[type=range] {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 2px;
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 0px 0px #000000;
+	border-radius: 10px;
+	border:none;
+}
+
+
+
+input[type=range]:hover::-webkit-slider-runnable-track{
+	background-color: rgba(255, 255, 255, 0.35);
+
+}
+
+input[type=range]:hover::-webkit-slider-runnable-thumb {
+	background-color: rgba(255, 255, 255, 1);
+
+}
+
+
+input[type=range]::-moz-range-track {
+	width: 100%;
+	height: 2px;
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+	border:none;
+}
+
+input[type=range]:hover::-moz-range-track{
+	background-color: rgba(255, 255, 255, 0.35);
+}
+input[type=range]:hover::-moz-range-thumb {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+
+
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+	height: 12px;
+	width: 12px;
+	border-radius: 10px;
+	background-color: rgba(170, 170, 170, 1);
+	cursor: pointer;
+	margin-top: -6px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+	border:none;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+	height: 12px;
+	width: 12px;
+	border-radius: 10px;
+	background-color: rgba(170, 170, 170, 1);
+	cursor: pointer;
+	margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+	border:none;
+}
+
